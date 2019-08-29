@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p> Click on the button to increment the count</p>
+        <br>
+        <button onclick="myFunction()">Click here</button> 
+
+        <p id="demo1">0</p>
+         
+        <script>
+            function myFunction(){
+                document.getElementById("demo1").innerHTML=call();
+            }
+            
+            
+            var call= (function(){
+                var count=0;
+                return function(){ count +=1 ; return count;}
+            })();
+      
+        </script>      
+    </body>
+</html>
